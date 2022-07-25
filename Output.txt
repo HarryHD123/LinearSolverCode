@@ -1,0 +1,9 @@
+This file displays the answers found using linear programming solver package.
+
+x1 = 0
+x2 = 0
+x3 = 600.00
+s1 = 0
+s2 = 600.00
+s3 = 300.00
+z = 180000.00

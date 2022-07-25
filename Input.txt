@@ -1,0 +1,49 @@
+
+1.  Please enter the problem type by typing '1' for maximisation and '0' for minimisation after 'Problem Type:' below:
+    NOTE: Set Dual to the opposite of the Problem Type (i.e. 1 and 0 or 0 and 1)
+
+    Problem Type: 1
+    Dual: 0
+
+2.  Please enter the coefficients of the objective function between the stars:
+
+    Example:
+
+    for objective function:     enter:
+    z = 60x1 + 90x2 + 300x3     60, 90, 300
+
+    OBJECTIVE FUNCTION
+    *
+    60, 90, 300
+    *
+
+
+3.  Please enter the coefficients of the inequalities between the braces (curly brackets).
+    If the coefficients are less than or equal to (<=), add a < at the end of the list,
+    if greater than or equal to (>=), add a > at the end of the list:
+    NOTE: Include coefficient even if coefficient is 0
+
+    Format: variable coefficients, value coefficient, sign (1 or -1)
+
+    Example:
+
+    for constraints:        enter:
+    x1 + x2 + x3 <= 600     1, 1, 1, <, 600
+    x1 + 3x2 <= 600         1, 3, 0, <, 600
+    2x1 + x3 >= 900         2, 0, 1, >, 900
+
+    INEQUALITIES
+    {
+    1,1,1,<,600
+    1,3,0,<,600
+    2,0,1,<,900
+    }
+
+
+4.  Please enter the coefficients of the equalities between the braces using the same format as 3.
+    NOTE: Include coefficient even if coefficient is 0
+
+    EQUATION
+    [
+
+    ]

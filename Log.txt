@@ -1,0 +1,40 @@
+This file shows the inner workings of the linear programming solver package.
+Each step is recorded and displayed here.
+
+This is the initial Tableau:
+x1   	x2   	x3   	s1   	s2   	s3   	z   	sol   	
+1.00 	1.00 	1.00 	1.00 	0.00 	0.00 	0.00 	600.00 	
+1.00 	3.00 	0.00 	0.00 	1.00 	0.00 	0.00 	600.00 	
+2.00 	0.00 	1.00 	0.00 	0.00 	1.00 	0.00 	900.00 	
+-60.00 	-90.00 	-300.00 	0.00 	0.00 	0.00 	1.00 	0.00 	
+
+This is pivot number: 1
+
+The pivot column is column: x3
+
+This is the tableau with the ratio column added:
+x1   	x2   	x3   	s1   	s2   	s3   	z   	sol   	ratio   	
+1.00 	1.00 	1.00 	1.00 	0.00 	0.00 	0.00 	600.00 	600.00 	
+1.00 	3.00 	0.00 	0.00 	1.00 	0.00 	0.00 	600.00 	inf 	
+2.00 	0.00 	1.00 	0.00 	0.00 	1.00 	0.00 	900.00 	900.00 	
+-60.00 	-90.00 	-300.00 	0.00 	0.00 	0.00 	1.00 	0.00 	
+
+The pivot row is row: 1
+
+This is the tableau after pivot:
+x1   	x2   	x3   	s1   	s2   	s3   	z   	sol   	
+1.00 	1.00 	1.00 	1.00 	0.00 	0.00 	0.00 	600.00 	
+1.00 	3.00 	0.00 	0.00 	1.00 	0.00 	0.00 	600.00 	
+1.00 	-1.00 	0.00 	-1.00 	0.00 	1.00 	0.00 	300.00 	
+240.00 	210.00 	0.00 	300.00 	0.00 	0.00 	1.00 	180000.00 	
+
+An optimum has been found:
+
+The answers are:
+x1 = 0
+x2 = 0
+x3 = 600.00
+s1 = 0
+s2 = 600.00
+s3 = 300.00
+z = 180000.00
